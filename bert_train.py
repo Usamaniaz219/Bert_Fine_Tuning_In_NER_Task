@@ -172,8 +172,8 @@ trainer.train()
 # Save model, tokenizer, and label map
 # -------------------------------
 
-# trainer.save_model("/media/usama/SSD/Usama_dev_ssd/name_entity_recognition_/bert_based_NER/src/results")
-# tokenizer.save_pretrained("/media/usama/SSD/Usama_dev_ssd/name_entity_recognition_/bert_based_NER/src/results")
+trainer.save_model("/media/usama/SSD/Usama_dev_ssd/name_entity_recognition_/bert_based_NER/src/results")
+tokenizer.save_pretrained("/media/usama/SSD/Usama_dev_ssd/name_entity_recognition_/bert_based_NER/src/results")
 
 with open('results/checkpoint-166/id_to_label.json', 'w') as f:
     json.dump(id_to_label, f)
